@@ -39,7 +39,7 @@ class ArticlesController < ApplicationController
   end
 
   def show
-
+   
   end
 
   def destroy
