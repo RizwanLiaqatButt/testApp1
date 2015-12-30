@@ -28,6 +28,7 @@ class ArticlesController < ApplicationController
     #redirect_to article_path(@article)
     # what if data is invalid so in that case use code below
     @article = Article.new(article_params)
+    @article.user = User.first
     if @article.save
       #do something
       flash[:success] = "Article was successfully created"
